@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a2a1a"/>
+      <stop offset="100%" style="stop-color:#2a1a0a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="220" rx="115" ry="125" fill="#7a6038"/>
+  <!-- Face -->
+  <ellipse cx="200" cy="240" rx="80" ry="85" fill="#B8956A"/>
+  <!-- Cap -->
+  <ellipse cx="200" cy="140" rx="100" ry="35" fill="#5a7a4a"/>
+  <rect x="100" y="120" width="200" height="30" rx="5" fill="#5a7a4a"/>
+  <rect x="110" y="115" width="180" height="15" rx="5" fill="#4a6a3a"/>
+  <!-- Cap brim -->
+  <ellipse cx="230" cy="150" rx="90" ry="15" fill="#4a6a3a"/>
+  <!-- Eyes -->
+  <ellipse cx="165" cy="210" rx="22" ry="18" fill="white"/>
+  <ellipse cx="235" cy="210" rx="22" ry="18" fill="white"/>
+  <circle cx="170" cy="212" r="10" fill="#3a2a1a"/>
+  <circle cx="240" cy="212" r="10" fill="#3a2a1a"/>
+  <circle cx="173" cy="209" r="4" fill="white"/>
+  <circle cx="243" cy="209" r="4" fill="white"/>
+  <!-- Eyebrows -->
+  <path d="M143 190 Q165 180 187 192" stroke="#5a4020" stroke-width="3" fill="none"/>
+  <path d="M213 192 Q235 180 257 190" stroke="#5a4020" stroke-width="3" fill="none"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="255" rx="16" ry="11" fill="#9a7548"/>
+  <circle cx="193" cy="255" r="3.5" fill="#6a5030"/>
+  <circle cx="207" cy="255" r="3.5" fill="#6a5030"/>
+  <!-- Mouth -->
+  <path d="M180 278 Q200 290 220 278" stroke="#6a5030" stroke-width="2.5" fill="none"/>
+  <!-- Ears -->
+  <ellipse cx="95" cy="210" rx="22" ry="28" fill="#7a6038"/>
+  <ellipse cx="95" cy="210" rx="13" ry="18" fill="#B8956A"/>
+  <ellipse cx="305" cy="210" rx="22" ry="28" fill="#7a6038"/>
+  <ellipse cx="305" cy="210" rx="13" ry="18" fill="#B8956A"/>
+  <!-- Scarf/bandana -->
+  <path d="M120 310 Q200 330 280 310 L280 340 Q200 360 120 340 Z" fill="#8a4a2a"/>
+  <!-- Body -->
+  <rect x="120" y="330" width="160" height="70" rx="10" fill="#6a5a3a"/>
+</svg>

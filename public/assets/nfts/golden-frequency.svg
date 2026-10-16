@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a2810"/>
+      <stop offset="100%" style="stop-color:#2a1808"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="215" rx="116" ry="126" fill="#8a6828"/>
+  <ellipse cx="200" cy="235" rx="82" ry="86" fill="#C4956A"/>
+  <!-- Aviator sunglasses -->
+  <path d="M125 195 Q200 185 275 195" stroke="#D4944C" stroke-width="3" fill="none"/>
+  <ellipse cx="158" cy="205" rx="30" ry="22" fill="#4a3010"/>
+  <ellipse cx="242" cy="205" rx="30" ry="22" fill="#4a3010"/>
+  <ellipse cx="158" cy="205" rx="30" ry="22" fill="none" stroke="#D4944C" stroke-width="2"/>
+  <ellipse cx="242" cy="205" rx="30" ry="22" fill="none" stroke="#D4944C" stroke-width="2"/>
+  <rect x="186" y="200" width="28" height="4" rx="2" fill="#D4944C"/>
+  <!-- Gradient on lenses -->
+  <ellipse cx="150" cy="200" rx="14" ry="8" fill="#D4944C" opacity="0.2"/>
+  <ellipse cx="234" cy="200" rx="14" ry="8" fill="#D4944C" opacity="0.2"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="252" rx="16" ry="10" fill="#A07548"/>
+  <circle cx="193" cy="252" r="3" fill="#7a5830"/>
+  <circle cx="207" cy="252" r="3" fill="#7a5830"/>
+  <!-- Mouth -->
+  <path d="M178 278 Q200 292 222 278" stroke="#7a5830" stroke-width="2.5" fill="none"/>
+  <!-- Ears -->
+  <ellipse cx="94" cy="210" rx="22" ry="27" fill="#8a6828"/>
+  <ellipse cx="94" cy="210" rx="13" ry="17" fill="#C4956A"/>
+  <ellipse cx="306" cy="210" rx="22" ry="27" fill="#8a6828"/>
+  <ellipse cx="306" cy="210" rx="13" ry="17" fill="#C4956A"/>
+  <!-- Bomber jacket -->
+  <path d="M112 315 Q200 340 288 315 L298 400 L102 400 Z" fill="#5a4020"/>
+  <!-- Collar fur -->
+  <path d="M130 310 Q200 325 270 310 Q265 300 200 295 Q135 300 130 310 Z" fill="#D4A870"/>
+  <!-- Sound wave decorations -->
+  <path d="M60 350 Q70 330 80 350 Q90 370 100 350" stroke="#D4944C" stroke-width="2" fill="none" opacity="0.4"/>
+  <path d="M300 350 Q310 330 320 350 Q330 370 340 350" stroke="#D4944C" stroke-width="2" fill="none" opacity="0.4"/>
+  <!-- Head top -->
+  <path d="M135 132 Q165 108 200 114 Q235 108 265 132" fill="#8a6828"/>
+</svg>

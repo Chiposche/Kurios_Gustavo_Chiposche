@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a2e"/>
+      <stop offset="100%" style="stop-color:#2e0a3e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Pulse waves background -->
+  <path d="M0 200 Q50 180 100 200 Q150 220 200 200 Q250 180 300 200 Q350 220 400 200" stroke="#E040FB" stroke-width="1" fill="none" opacity="0.2"/>
+  <path d="M0 220 Q50 200 100 220 Q150 240 200 220 Q250 200 300 220 Q350 240 400 220" stroke="#E040FB" stroke-width="1" fill="none" opacity="0.15"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="215" rx="116" ry="126" fill="#6a2a8a"/>
+  <ellipse cx="200" cy="235" rx="82" ry="86" fill="#CE93D8"/>
+  <!-- Neon headphones -->
+  <path d="M118 180 Q118 130 200 125 Q282 130 282 180" stroke="#E040FB" stroke-width="5" fill="none"/>
+  <rect x="102" y="175" width="22" height="40" rx="8" fill="#E040FB"/>
+  <rect x="276" y="175" width="22" height="40" rx="8" fill="#E040FB"/>
+  <rect x="106" y="180" width="14" height="30" rx="5" fill="#9C27B0"/>
+  <rect x="280" y="180" width="14" height="30" rx="5" fill="#9C27B0"/>
+  <!-- Eyes -->
+  <ellipse cx="165" cy="205" rx="20" ry="18" fill="white"/>
+  <ellipse cx="235" cy="205" rx="20" ry="18" fill="white"/>
+  <circle cx="165" cy="205" r="10" fill="#4A148C"/>
+  <circle cx="235" cy="205" r="10" fill="#4A148C"/>
+  <circle cx="162" cy="202" r="4" fill="white"/>
+  <circle cx="232" cy="202" r="4" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="248" rx="14" ry="9" fill="#AA68B8"/>
+  <circle cx="194" cy="248" r="3" fill="#8a4a9a"/>
+  <circle cx="206" cy="248" r="3" fill="#8a4a9a"/>
+  <!-- Big smile -->
+  <path d="M170 272 Q200 295 230 272" stroke="#8a4a9a" stroke-width="2.5" fill="none"/>
+  <!-- Ears -->
+  <ellipse cx="94" cy="210" rx="22" ry="27" fill="#6a2a8a"/>
+  <ellipse cx="94" cy="210" rx="13" ry="17" fill="#CE93D8"/>
+  <ellipse cx="306" cy="210" rx="22" ry="27" fill="#6a2a8a"/>
+  <ellipse cx="306" cy="210" rx="13" ry="17" fill="#CE93D8"/>
+  <!-- DJ jacket -->
+  <path d="M112 315 Q200 340 288 315 L298 400 L102 400 Z" fill="#4A148C"/>
+  <!-- Music notes -->
+  <circle cx="140" y="350" r="5" fill="#E040FB" opacity="0.5" cx="140" cy="350"/>
+  <line x1="145" y1="350" x2="145" y2="335" stroke="#E040FB" stroke-width="2" opacity="0.5"/>
+  <circle cx="260" cy="345" r="5" fill="#E040FB" opacity="0.5"/>
+  <line x1="265" y1="345" x2="265" y2="330" stroke="#E040FB" stroke-width="2" opacity="0.5"/>
+  <!-- Head top -->
+  <path d="M135 132 Q165 108 200 114 Q235 108 265 132" fill="#6a2a8a"/>
+</svg>

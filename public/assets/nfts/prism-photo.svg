@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a1a10"/>
+      <stop offset="100%" style="stop-color:#1a1008"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Lens flares -->
+  <circle cx="320" cy="80" r="30" fill="#FF6F00" opacity="0.08"/>
+  <circle cx="320" cy="80" r="15" fill="#FFB300" opacity="0.1"/>
+  <circle cx="80" cy="320" r="20" fill="#FF6F00" opacity="0.06"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="215" rx="116" ry="126" fill="#8a5a2a"/>
+  <ellipse cx="200" cy="235" rx="82" ry="86" fill="#FFAB91"/>
+  <!-- Beret -->
+  <ellipse cx="200" cy="132" rx="75" ry="18" fill="#BF360C"/>
+  <path d="M135 132 Q155 85 220 90 Q265 100 265 132" fill="#BF360C"/>
+  <circle cx="200" cy="88" r="6" fill="#BF360C"/>
+  <!-- Round glasses -->
+  <circle cx="162" cy="200" r="24" fill="none" stroke="#FFB300" stroke-width="2.5"/>
+  <circle cx="238" cy="200" r="24" fill="none" stroke="#FFB300" stroke-width="2.5"/>
+  <line x1="186" y1="200" x2="214" y2="200" stroke="#FFB300" stroke-width="2"/>
+  <!-- Eyes behind glasses -->
+  <circle cx="162" cy="200" r="10" fill="white"/>
+  <circle cx="238" cy="200" r="10" fill="white"/>
+  <circle cx="162" cy="200" r="5" fill="#4E342E"/>
+  <circle cx="238" cy="200" r="5" fill="#4E342E"/>
+  <circle cx="160" cy="198" r="2.5" fill="white"/>
+  <circle cx="236" cy="198" r="2.5" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="240" rx="12" ry="8" fill="#D4856a"/>
+  <circle cx="195" cy="240" r="2.5" fill="#aa6a4a"/>
+  <circle cx="205" cy="240" r="2.5" fill="#aa6a4a"/>
+  <!-- Thoughtful mouth -->
+  <path d="M185 265 Q200 275 215 265" stroke="#aa6a4a" stroke-width="2" fill="none"/>
+  <!-- Ears -->
+  <ellipse cx="94" cy="210" rx="22" ry="27" fill="#8a5a2a"/>
+  <ellipse cx="94" cy="210" rx="13" ry="17" fill="#FFAB91"/>
+  <ellipse cx="306" cy="210" rx="22" ry="27" fill="#8a5a2a"/>
+  <ellipse cx="306" cy="210" rx="13" ry="17" fill="#FFAB91"/>
+  <!-- Turtleneck -->
+  <path d="M112 315 Q200 340 288 315 L298 400 L102 400 Z" fill="#3E2723"/>
+  <!-- Turtleneck collar -->
+  <path d="M145 310 Q200 318 255 310 Q255 298 200 292 Q145 298 145 310 Z" fill="#4E342E"/>
+  <!-- Camera strap -->
+  <line x1="130" y1="315" x2="180" y2="380" stroke="#FFB300" stroke-width="3"/>
+  <line x1="270" y1="315" x2="220" y2="380" stroke="#FFB300" stroke-width="3"/>
+  <!-- Small camera -->
+  <rect x="180" y="365" width="40" height="28" rx="5" fill="#37474F"/>
+  <circle cx="200" cy="376" r="8" fill="#263238"/>
+  <circle cx="200" cy="376" r="4" fill="#FFB300" opacity="0.3"/>
+</svg>

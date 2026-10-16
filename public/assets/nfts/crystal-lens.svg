@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2a3a"/>
+      <stop offset="100%" style="stop-color:#0a1520"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Crystal reflections -->
+  <polygon points="50,80 70,50 90,80" fill="#4FC3F7" opacity="0.1"/>
+  <polygon points="320,60 340,30 360,60" fill="#4FC3F7" opacity="0.1"/>
+  <polygon points="40,350 60,320 80,350" fill="#4FC3F7" opacity="0.08"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="215" rx="116" ry="126" fill="#4a6a8a"/>
+  <ellipse cx="200" cy="235" rx="82" ry="86" fill="#90CAF9"/>
+  <!-- Camera around neck -->
+  <rect x="160" y="300" width="80" height="50" rx="8" fill="#37474F"/>
+  <circle cx="200" cy="320" r="16" fill="#263238"/>
+  <circle cx="200" cy="320" r="12" fill="#4FC3F7" opacity="0.3"/>
+  <circle cx="200" cy="320" r="6" fill="#0288D1"/>
+  <rect x="222" y="305" width="12" height="8" rx="2" fill="#546E7A"/>
+  <!-- Eyes with sparkle -->
+  <ellipse cx="165" cy="205" rx="20" ry="18" fill="white"/>
+  <ellipse cx="235" cy="205" rx="20" ry="18" fill="white"/>
+  <circle cx="165" cy="205" r="10" fill="#0D47A1"/>
+  <circle cx="235" cy="205" r="10" fill="#0D47A1"/>
+  <circle cx="162" cy="202" r="4" fill="white"/>
+  <circle cx="232" cy="202" r="4" fill="white"/>
+  <circle cx="170" cy="198" r="2" fill="white"/>
+  <circle cx="240" cy="198" r="2" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="248" rx="14" ry="9" fill="#6a8aAA"/>
+  <circle cx="194" cy="248" r="3" fill="#4a6a8a"/>
+  <circle cx="206" cy="248" r="3" fill="#4a6a8a"/>
+  <!-- Gentle smile -->
+  <path d="M182 272 Q200 284 218 272" stroke="#4a6a8a" stroke-width="2.5" fill="none"/>
+  <!-- Ears -->
+  <ellipse cx="94" cy="210" rx="22" ry="27" fill="#4a6a8a"/>
+  <ellipse cx="94" cy="210" rx="13" ry="17" fill="#90CAF9"/>
+  <ellipse cx="306" cy="210" rx="22" ry="27" fill="#4a6a8a"/>
+  <ellipse cx="306" cy="210" rx="13" ry="17" fill="#90CAF9"/>
+  <!-- Vest -->
+  <path d="M112 315 Q200 340 288 315 L298 400 L102 400 Z" fill="#1565C0"/>
+  <!-- Beret -->
+  <ellipse cx="200" cy="128" rx="70" ry="20" fill="#0D47A1"/>
+  <path d="M140 128 Q170 90 220 100 Q260 108 260 128" fill="#0D47A1"/>
+  <!-- Head top -->
+  <path d="M135 132 Q165 108 200 114 Q235 108 265 132" fill="#4a6a8a"/>
+</svg>

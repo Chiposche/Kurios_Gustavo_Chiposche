@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a1a2a"/>
+      <stop offset="100%" style="stop-color:#1a0a3a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Quantum particles -->
+  <circle cx="60" cy="80" r="3" fill="#64FFDA" opacity="0.4"/>
+  <circle cx="340" cy="60" r="2" fill="#448AFF" opacity="0.4"/>
+  <circle cx="50" cy="340" r="2" fill="#E040FB" opacity="0.3"/>
+  <circle cx="350" cy="350" r="3" fill="#64FFDA" opacity="0.3"/>
+  <!-- Orbital rings -->
+  <ellipse cx="200" cy="200" rx="185" ry="60" fill="none" stroke="#64FFDA" stroke-width="1" opacity="0.15" transform="rotate(-30 200 200)"/>
+  <ellipse cx="200" cy="200" rx="185" ry="60" fill="none" stroke="#448AFF" stroke-width="1" opacity="0.15" transform="rotate(30 200 200)"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="215" rx="116" ry="126" fill="#1a4a6a"/>
+  <ellipse cx="200" cy="235" rx="82" ry="86" fill="#4DD0E1"/>
+  <!-- Crown -->
+  <path d="M145 135 L155 100 L175 125 L200 90 L225 125 L245 100 L255 135" fill="#FFD54F"/>
+  <circle cx="175" cy="118" r="4" fill="#E040FB"/>
+  <circle cx="200" cy="95" r="5" fill="#64FFDA"/>
+  <circle cx="225" cy="118" r="4" fill="#448AFF"/>
+  <!-- Cosmic eyes -->
+  <ellipse cx="165" cy="205" rx="22" ry="20" fill="#0D47A1"/>
+  <ellipse cx="235" cy="205" rx="22" ry="20" fill="#0D47A1"/>
+  <circle cx="165" cy="205" r="10" fill="#64FFDA"/>
+  <circle cx="235" cy="205" r="10" fill="#64FFDA"/>
+  <circle cx="165" cy="205" r="5" fill="#0D47A1"/>
+  <circle cx="235" cy="205" r="5" fill="#0D47A1"/>
+  <circle cx="162" cy="201" r="3" fill="white" opacity="0.8"/>
+  <circle cx="232" cy="201" r="3" fill="white" opacity="0.8"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="248" rx="14" ry="9" fill="#2a8aAa"/>
+  <circle cx="194" cy="248" r="3" fill="#1a6a8a"/>
+  <circle cx="206" cy="248" r="3" fill="#1a6a8a"/>
+  <!-- Confident smirk -->
+  <path d="M178 275 Q200 290 222 278" stroke="#1a6a8a" stroke-width="2.5" fill="none"/>
+  <!-- Ears -->
+  <ellipse cx="94" cy="210" rx="22" ry="27" fill="#1a4a6a"/>
+  <ellipse cx="94" cy="210" rx="13" ry="17" fill="#4DD0E1"/>
+  <ellipse cx="306" cy="210" rx="22" ry="27" fill="#1a4a6a"/>
+  <ellipse cx="306" cy="210" rx="13" ry="17" fill="#4DD0E1"/>
+  <!-- Royal cape -->
+  <path d="M112 315 Q200 340 288 315 L298 400 L102 400 Z" fill="#1A237E"/>
+  <!-- Cape fur collar -->
+  <path d="M130 310 Q200 325 270 310 Q265 300 200 295 Q135 300 130 310 Z" fill="#B39DDB"/>
+  <!-- Gem on chest -->
+  <polygon points="200,330 190,345 200,360 210,345" fill="#64FFDA" opacity="0.7"/>
+</svg>

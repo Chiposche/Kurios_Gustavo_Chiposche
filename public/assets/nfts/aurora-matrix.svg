@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a2a2a"/>
+      <stop offset="50%" style="stop-color:#1a0a3a"/>
+      <stop offset="100%" style="stop-color:#2a0a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Aurora streaks -->
+  <path d="M0 100 Q100 60 200 100 Q300 140 400 80" stroke="#00E5FF" stroke-width="3" fill="none" opacity="0.2"/>
+  <path d="M0 120 Q100 80 200 120 Q300 160 400 100" stroke="#76FF03" stroke-width="2" fill="none" opacity="0.15"/>
+  <path d="M0 140 Q100 100 200 140 Q300 180 400 120" stroke="#E040FB" stroke-width="2" fill="none" opacity="0.1"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="215" rx="116" ry="126" fill="#2a5a6a"/>
+  <ellipse cx="200" cy="235" rx="82" ry="86" fill="#80DEEA"/>
+  <!-- VR Headset -->
+  <rect x="130" y="180" width="140" height="40" rx="12" fill="#263238"/>
+  <rect x="135" y="185" width="58" height="30" rx="6" fill="#00E5FF" opacity="0.3"/>
+  <rect x="207" y="185" width="58" height="30" rx="6" fill="#E040FB" opacity="0.3"/>
+  <line x1="193" y1="185" x2="207" y2="185" stroke="#455A64" stroke-width="3"/>
+  <line x1="193" y1="215" x2="207" y2="215" stroke="#455A64" stroke-width="3"/>
+  <!-- Strap -->
+  <path d="M130 200 Q100 200 94 210" stroke="#263238" stroke-width="4" fill="none"/>
+  <path d="M270 200 Q300 200 306 210" stroke="#263238" stroke-width="4" fill="none"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="248" rx="14" ry="9" fill="#5a9aAa"/>
+  <circle cx="194" cy="248" r="3" fill="#3a7a8a"/>
+  <circle cx="206" cy="248" r="3" fill="#3a7a8a"/>
+  <!-- Excited mouth -->
+  <ellipse cx="200" cy="275" rx="18" ry="12" fill="#3a7a8a"/>
+  <ellipse cx="200" cy="270" rx="14" ry="6" fill="#80DEEA"/>
+  <!-- Ears -->
+  <ellipse cx="94" cy="210" rx="22" ry="27" fill="#2a5a6a"/>
+  <ellipse cx="94" cy="210" rx="13" ry="17" fill="#80DEEA"/>
+  <ellipse cx="306" cy="210" rx="22" ry="27" fill="#2a5a6a"/>
+  <ellipse cx="306" cy="210" rx="13" ry="17" fill="#80DEEA"/>
+  <!-- Tech suit -->
+  <path d="M112 315 Q200 340 288 315 L298 400 L102 400 Z" fill="#1A237E"/>
+  <!-- Glowing lines on suit -->
+  <line x1="150" y1="340" x2="150" y2="400" stroke="#00E5FF" stroke-width="1.5" opacity="0.4"/>
+  <line x1="250" y1="340" x2="250" y2="400" stroke="#E040FB" stroke-width="1.5" opacity="0.4"/>
+  <line x1="200" y1="335" x2="200" y2="400" stroke="#76FF03" stroke-width="1.5" opacity="0.3"/>
+  <!-- Head top -->
+  <path d="M135 132 Q165 108 200 114 Q235 108 265 132" fill="#2a5a6a"/>
+</svg>

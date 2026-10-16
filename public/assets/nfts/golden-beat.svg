@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a2a10"/>
+      <stop offset="100%" style="stop-color:#2a1a08"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="215" rx="116" ry="126" fill="#8a6830"/>
+  <ellipse cx="200" cy="235" rx="82" ry="86" fill="#C4956A"/>
+  <!-- Headphones -->
+  <path d="M105 180 Q200 120 295 180" stroke="#D4944C" stroke-width="8" fill="none"/>
+  <rect x="82" y="175" width="32" height="48" rx="10" fill="#D4944C"/>
+  <rect x="87" y="182" width="22" height="34" rx="7" fill="#B07830"/>
+  <rect x="286" y="175" width="32" height="48" rx="10" fill="#D4944C"/>
+  <rect x="291" y="182" width="22" height="34" rx="7" fill="#B07830"/>
+  <!-- Eyes closed (vibing) -->
+  <path d="M145 210 Q165 220 185 210" stroke="#5a4020" stroke-width="3" fill="none"/>
+  <path d="M215 210 Q235 220 255 210" stroke="#5a4020" stroke-width="3" fill="none"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="252" rx="16" ry="10" fill="#A07548"/>
+  <circle cx="193" cy="252" r="3" fill="#7a5830"/>
+  <circle cx="207" cy="252" r="3" fill="#7a5830"/>
+  <!-- Big smile -->
+  <path d="M170 275 Q200 300 230 275" stroke="#7a5830" stroke-width="3" fill="none"/>
+  <!-- Ears -->
+  <ellipse cx="94" cy="210" rx="22" ry="27" fill="#8a6830"/>
+  <ellipse cx="94" cy="210" rx="13" ry="17" fill="#C4956A"/>
+  <ellipse cx="306" cy="210" rx="22" ry="27" fill="#8a6830"/>
+  <ellipse cx="306" cy="210" rx="13" ry="17" fill="#C4956A"/>
+  <!-- T-shirt -->
+  <path d="M115 315 Q200 340 285 315 L295 400 L105 400 Z" fill="#D4944C"/>
+  <!-- Music notes -->
+  <text x="320" y="100" fill="#D4944C" font-size="24" opacity="0.6">&#9835;</text>
+  <text x="80" y="130" fill="#D4944C" font-size="18" opacity="0.4">&#9834;</text>
+  <text x="340" y="300" fill="#D4944C" font-size="20" opacity="0.5">&#9833;</text>
+  <!-- Head top -->
+  <path d="M135 132 Q165 108 200 114 Q235 108 265 132" fill="#8a6830"/>
+</svg>

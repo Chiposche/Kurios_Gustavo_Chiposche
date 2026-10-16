@@ -1,0 +1,3 @@
+{
+  "ignorePatterns": ["dist", "node_modules", "public", "lighthouse", "test-results", "playwright-report"]
+}

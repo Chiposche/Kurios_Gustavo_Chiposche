@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a3020"/>
+      <stop offset="100%" style="stop-color:#2a2010"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <ellipse cx="200" cy="215" rx="116" ry="126" fill="#C4A060"/>
+  <ellipse cx="200" cy="235" rx="82" ry="86" fill="#E8C888"/>
+  <!-- Monocle -->
+  <circle cx="245" cy="205" r="25" fill="none" stroke="#D4944C" stroke-width="3"/>
+  <circle cx="245" cy="205" r="22" fill="#f5e8d0" opacity="0.15"/>
+  <line x1="268" y1="210" x2="300" y2="280" stroke="#D4944C" stroke-width="2"/>
+  <!-- Left eye -->
+  <ellipse cx="160" cy="205" rx="20" ry="16" fill="white"/>
+  <circle cx="165" cy="207" r="9" fill="#3a3020"/>
+  <circle cx="168" cy="204" r="3.5" fill="white"/>
+  <!-- Right eye (behind monocle) -->
+  <ellipse cx="240" cy="205" rx="18" ry="14" fill="white"/>
+  <circle cx="244" cy="207" r="8" fill="#3a3020"/>
+  <circle cx="247" cy="204" r="3" fill="white"/>
+  <!-- Eyebrows -->
+  <path d="M140 188 Q160 178 180 190" stroke="#8a7040" stroke-width="3" fill="none"/>
+  <path d="M220 190 Q240 178 260 188" stroke="#8a7040" stroke-width="3" fill="none"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="252" rx="15" ry="10" fill="#D0A868"/>
+  <circle cx="194" cy="252" r="3" fill="#a08048"/>
+  <circle cx="206" cy="252" r="3" fill="#a08048"/>
+  <!-- Mouth -->
+  <path d="M178 278 Q200 288 222 278" stroke="#a08048" stroke-width="2.5" fill="none"/>
+  <!-- Ears -->
+  <ellipse cx="94" cy="210" rx="22" ry="27" fill="#C4A060"/>
+  <ellipse cx="94" cy="210" rx="13" ry="17" fill="#E8C888"/>
+  <ellipse cx="306" cy="210" rx="22" ry="27" fill="#C4A060"/>
+  <ellipse cx="306" cy="210" rx="13" ry="17" fill="#E8C888"/>
+  <!-- Suit -->
+  <path d="M110 315 Q200 340 290 315 L300 400 L100 400 Z" fill="#2a2a2a"/>
+  <path d="M158 320 L200 350 L178 368 Z" fill="#1a1a1a"/>
+  <path d="M242 320 L200 350 L222 368 Z" fill="#1a1a1a"/>
+  <!-- Tie -->
+  <polygon points="195,320 205,320 210,370 200,380 190,370" fill="#D4944C"/>
+  <!-- Shirt collar -->
+  <path d="M170 315 L200 330 L230 315" fill="white" opacity="0.9"/>
+  <!-- Head top -->
+  <path d="M135 132 Q165 108 200 114 Q235 108 265 132" fill="#C4A060"/>
+  <!-- Top hat -->
+  <rect x="150" y="90" width="100" height="55" rx="5" fill="#1a1a1a"/>
+  <rect x="135" y="140" width="130" height="12" rx="4" fill="#1a1a1a"/>
+  <rect x="160" y="130" width="80" height="5" fill="#D4944C"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a10"/>
+      <stop offset="100%" style="stop-color:#1a1a08"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Soft light -->
+  <circle cx="200" cy="200" r="180" fill="#FFD54F" opacity="0.03"/>
+  <!-- Head -->
+  <ellipse cx="200" cy="215" rx="116" ry="126" fill="#8a7a3a"/>
+  <ellipse cx="200" cy="235" rx="82" ry="86" fill="#FFCC80"/>
+  <!-- Monk hood -->
+  <path d="M110 180 Q120 90 200 80 Q280 90 290 180" fill="#5D4037"/>
+  <path d="M120 180 Q130 100 200 92 Q270 100 280 180" fill="#795548"/>
+  <!-- Serene closed eyes -->
+  <path d="M148 205 Q165 195 182 205" stroke="#5D4037" stroke-width="2.5" fill="none"/>
+  <path d="M218 205 Q235 195 252 205" stroke="#5D4037" stroke-width="2.5" fill="none"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="238" rx="12" ry="8" fill="#D4A860"/>
+  <circle cx="195" cy="238" r="2.5" fill="#aa8a40"/>
+  <circle cx="205" cy="238" r="2.5" fill="#aa8a40"/>
+  <!-- Peaceful smile -->
+  <path d="M185 262 Q200 272 215 262" stroke="#aa8a40" stroke-width="2" fill="none"/>
+  <!-- Ears -->
+  <ellipse cx="100" cy="210" rx="18" ry="24" fill="#8a7a3a"/>
+  <ellipse cx="100" cy="210" rx="10" ry="15" fill="#FFCC80"/>
+  <ellipse cx="300" cy="210" rx="18" ry="24" fill="#8a7a3a"/>
+  <ellipse cx="300" cy="210" rx="10" ry="15" fill="#FFCC80"/>
+  <!-- Robe -->
+  <path d="M112 315 Q200 340 288 315 L298 400 L102 400 Z" fill="#5D4037"/>
+  <!-- Prayer beads -->
+  <circle cx="155" cy="330" r="4" fill="#FFD54F" opacity="0.6"/>
+  <circle cx="165" cy="338" r="4" fill="#FFD54F" opacity="0.6"/>
+  <circle cx="175" cy="344" r="4" fill="#FFD54F" opacity="0.6"/>
+  <circle cx="186" cy="348" r="4" fill="#FFD54F" opacity="0.6"/>
+  <circle cx="198" cy="350" r="4" fill="#FFD54F" opacity="0.6"/>
+  <circle cx="210" cy="348" r="4" fill="#FFD54F" opacity="0.6"/>
+  <!-- Third eye dot -->
+  <circle cx="200" cy="160" r="5" fill="#FFD54F" opacity="0.7"/>
+</svg>

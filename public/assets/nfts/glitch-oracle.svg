@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0a10"/>
+      <stop offset="100%" style="stop-color:#0a1a1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Glitch lines -->
+  <rect x="0" y="95" width="400" height="3" fill="#FF1744" opacity="0.15"/>
+  <rect x="0" y="250" width="400" height="2" fill="#00E5FF" opacity="0.12"/>
+  <rect x="0" y="310" width="400" height="3" fill="#76FF03" opacity="0.1"/>
+  <rect x="50" y="180" width="120" height="2" fill="#FF1744" opacity="0.1"/>
+  <rect x="230" y="160" width="100" height="2" fill="#00E5FF" opacity="0.1"/>
+  <!-- Head with glitch offset -->
+  <ellipse cx="200" cy="215" rx="116" ry="126" fill="#4a2a3a"/>
+  <ellipse cx="203" cy="215" rx="116" ry="126" fill="#FF1744" opacity="0.05"/>
+  <ellipse cx="197" cy="215" rx="116" ry="126" fill="#00E5FF" opacity="0.05"/>
+  <ellipse cx="200" cy="235" rx="82" ry="86" fill="#CE93D8"/>
+  <!-- Third eye -->
+  <ellipse cx="200" cy="165" rx="12" ry="10" fill="#1a0a10"/>
+  <circle cx="200" cy="165" r="6" fill="#FF1744"/>
+  <circle cx="200" cy="165" r="3" fill="#FF8A80" opacity="0.8"/>
+  <!-- Glitchy eyes -->
+  <ellipse cx="165" cy="205" rx="20" ry="18" fill="white"/>
+  <ellipse cx="235" cy="205" rx="20" ry="18" fill="white"/>
+  <!-- Left eye glitch -->
+  <circle cx="165" cy="205" r="10" fill="#1a0a10"/>
+  <circle cx="167" cy="205" r="10" fill="#FF1744" opacity="0.15"/>
+  <circle cx="163" cy="205" r="10" fill="#00E5FF" opacity="0.15"/>
+  <!-- Right eye -->
+  <circle cx="235" cy="205" r="10" fill="#1a0a10"/>
+  <circle cx="237" cy="205" r="10" fill="#FF1744" opacity="0.15"/>
+  <circle cx="233" cy="205" r="10" fill="#00E5FF" opacity="0.15"/>
+  <!-- Pupils -->
+  <circle cx="165" cy="205" r="4" fill="#FF1744"/>
+  <circle cx="235" cy="205" r="4" fill="#FF1744"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="248" rx="14" ry="9" fill="#9a6a8a"/>
+  <circle cx="194" cy="248" r="3" fill="#7a4a6a"/>
+  <circle cx="206" cy="248" r="3" fill="#7a4a6a"/>
+  <!-- Cryptic smile -->
+  <path d="M178 275 Q190 285 200 275 Q210 285 222 275" stroke="#7a4a6a" stroke-width="2" fill="none"/>
+  <!-- Ears -->
+  <ellipse cx="94" cy="210" rx="22" ry="27" fill="#4a2a3a"/>
+  <ellipse cx="94" cy="210" rx="13" ry="17" fill="#CE93D8"/>
+  <ellipse cx="306" cy="210" rx="22" ry="27" fill="#4a2a3a"/>
+  <ellipse cx="306" cy="210" rx="13" ry="17" fill="#CE93D8"/>
+  <!-- Digital robe -->
+  <path d="M112 315 Q200 340 288 315 L298 400 L102 400 Z" fill="#1a0a10"/>
+  <!-- Glitch stripes on robe -->
+  <rect x="140" y="345" width="50" height="3" fill="#FF1744" opacity="0.2"/>
+  <rect x="210" y="360" width="60" height="2" fill="#00E5FF" opacity="0.2"/>
+  <rect x="150" y="375" width="40" height="3" fill="#76FF03" opacity="0.15"/>
+  <!-- Mystical symbols -->
+  <circle cx="200" cy="340" r="12" fill="none" stroke="#FF1744" stroke-width="1" opacity="0.3"/>
+  <polygon points="200,330 192,346 208,346" fill="none" stroke="#FF1744" stroke-width="1" opacity="0.3"/>
+  <!-- Head top -->
+  <path d="M135 132 Q165 108 200 114 Q235 108 265 132" fill="#4a2a3a"/>
+</svg>

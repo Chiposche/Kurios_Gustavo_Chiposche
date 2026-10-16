@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0a0a1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <!-- Data streams background -->
+  <text x="30" y="60" fill="#00BCD4" opacity="0.15" font-family="monospace" font-size="10">01101001</text>
+  <text x="280" y="100" fill="#00BCD4" opacity="0.15" font-family="monospace" font-size="10">11010110</text>
+  <text x="50" y="360" fill="#00BCD4" opacity="0.15" font-family="monospace" font-size="10">10110011</text>
+  <text x="300" y="380" fill="#00BCD4" opacity="0.15" font-family="monospace" font-size="10">01001101</text>
+  <!-- Head -->
+  <ellipse cx="200" cy="215" rx="116" ry="126" fill="#5a5a7a"/>
+  <ellipse cx="200" cy="235" rx="82" ry="86" fill="#9E9E9E"/>
+  <!-- Cyber monocle -->
+  <circle cx="160" cy="200" r="28" fill="none" stroke="#00BCD4" stroke-width="3"/>
+  <circle cx="160" cy="200" r="22" fill="#0a1a2e" opacity="0.8"/>
+  <circle cx="160" cy="195" r="6" fill="#00BCD4" opacity="0.4"/>
+  <line x1="188" y1="200" x2="210" y2="200" stroke="#00BCD4" stroke-width="2"/>
+  <!-- Right eye -->
+  <ellipse cx="240" cy="200" rx="18" ry="16" fill="white"/>
+  <circle cx="240" cy="200" r="8" fill="#1a1a2e"/>
+  <circle cx="237" cy="197" r="3" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="200" cy="248" rx="14" ry="9" fill="#7a7a9a"/>
+  <circle cx="194" cy="248" r="3" fill="#5a5a7a"/>
+  <circle cx="206" cy="248" r="3" fill="#5a5a7a"/>
+  <!-- Mouth -->
+  <path d="M178 275 Q200 288 222 275" stroke="#5a5a7a" stroke-width="2.5" fill="none"/>
+  <!-- Ears -->
+  <ellipse cx="94" cy="210" rx="22" ry="27" fill="#5a5a7a"/>
+  <ellipse cx="94" cy="210" rx="13" ry="17" fill="#9E9E9E"/>
+  <ellipse cx="306" cy="210" rx="22" ry="27" fill="#5a5a7a"/>
+  <ellipse cx="306" cy="210" rx="13" ry="17" fill="#9E9E9E"/>
+  <!-- Ear tech -->
+  <circle cx="306" cy="205" r="6" fill="#00BCD4" opacity="0.5"/>
+  <!-- Hoodie -->
+  <path d="M112 315 Q200 340 288 315 L298 400 L102 400 Z" fill="#37474F"/>
+  <!-- Scroll on chest -->
+  <rect x="170" y="340" width="60" height="35" rx="4" fill="#4DD0E1" opacity="0.3"/>
+  <line x1="180" y1="350" x2="220" y2="350" stroke="#00BCD4" stroke-width="1.5"/>
+  <line x1="180" y1="358" x2="215" y2="358" stroke="#00BCD4" stroke-width="1.5"/>
+  <line x1="180" y1="366" x2="210" y2="366" stroke="#00BCD4" stroke-width="1.5"/>
+  <!-- Top of head -->
+  <path d="M135 132 Q165 108 200 114 Q235 108 265 132" fill="#5a5a7a"/>
+</svg>
