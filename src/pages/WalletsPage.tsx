@@ -140,7 +140,7 @@ export function WalletsPage() {
                     value={newDisplayName}
                     onChange={(e) => setNewDisplayName(e.target.value)}
                     required
-                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                   />
                 </div>
 
@@ -153,7 +153,7 @@ export function WalletsPage() {
                     type="text"
                     value={newNickname}
                     onChange={(e) => setNewNickname(e.target.value)}
-                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                   />
                 </div>
 
@@ -166,7 +166,7 @@ export function WalletsPage() {
                     value={newNetwork}
                     onChange={(e) => setNewNetwork(e.target.value)}
                     required
-                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                   >
                     <option value="" disabled>Selecione uma rede</option>
                     <option value="ethereum">Ethereum</option>
@@ -186,7 +186,7 @@ export function WalletsPage() {
                     value={newProfileName}
                     onChange={(e) => setNewProfileName(e.target.value)}
                     required
-                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                   />
                 </div>
 
@@ -201,7 +201,7 @@ export function WalletsPage() {
                     value={newAddress}
                     onChange={(e) => setNewAddress(e.target.value)}
                     required
-                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                   />
                 </div>
 
@@ -215,7 +215,7 @@ export function WalletsPage() {
                     placeholder="ENS ou carteira secundária (opcional)"
                     value={newSecondaryAddress}
                     onChange={(e) => setNewSecondaryAddress(e.target.value)}
-                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                   />
                 </div>
 
@@ -228,7 +228,7 @@ export function WalletsPage() {
                     value={newWalletType}
                     onChange={(e) => setNewWalletType(e.target.value)}
                     required
-                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                   >
                     <option value="" disabled>Selecione uma carteira</option>
                     <option value="metamask">MetaMask</option>
@@ -248,7 +248,7 @@ export function WalletsPage() {
                     value={newReferralCode}
                     onChange={(e) => setNewReferralCode(e.target.value)}
                     required
-                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                   />
                 </div>
 
@@ -262,7 +262,7 @@ export function WalletsPage() {
                     value={newEmail}
                     onChange={(e) => setNewEmail(e.target.value)}
                     required
-                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+                    className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                   />
                 </div>
 
@@ -277,7 +277,7 @@ export function WalletsPage() {
                       value={newEnsName}
                       onChange={(e) => setNewEnsName(e.target.value)}
                       required
-                      className="flex-1 bg-[#1A1412] border border-[#3A2A20] rounded-l px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+                      className="flex-1 bg-[#1A1412] border border-[#3A2A20] rounded-l px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                     />
                     <span className="bg-[#1A1412] border border-l-0 border-[#3A2A20] rounded-r px-3 py-3 text-[#A78B6E] text-sm flex items-center">
                       .eth

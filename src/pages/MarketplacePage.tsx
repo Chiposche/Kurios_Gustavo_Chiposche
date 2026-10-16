@@ -247,7 +247,7 @@ export function MarketplacePage() {
               <select
                 value={filters.sort}
                 onChange={(e) => updateFilter('sort', e.target.value)}
-                className="bg-[#2A1F1A] border border-[#3A2A20] rounded px-3 py-1.5 text-[#C4956A] text-sm focus:outline-none focus:border-[#D4944C]"
+                className="bg-[#2A1F1A] border border-[#3A2A20] rounded px-3 py-1.5 text-[#C4956A] text-sm focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
               >
                 <option value="recent">Listados recentemente</option>
                 <option value="price_asc">Menor preço</option>
@@ -274,7 +274,7 @@ export function MarketplacePage() {
                   placeholder="Explorar coleções"
                   value={filters.search || ''}
                   onChange={(e) => updateFilter('search', e.target.value || undefined)}
-                  className="w-full bg-[#2A1F1A] border border-[#3A2A20] rounded-full pl-10 pr-4 py-2.5 text-white text-sm placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+                  className="w-full bg-[#2A1F1A] border border-[#3A2A20] rounded-full pl-10 pr-4 py-2.5 text-white text-sm placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 />
               </div>
             </div>

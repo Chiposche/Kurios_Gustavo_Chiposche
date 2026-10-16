@@ -169,7 +169,7 @@ export function ProfilePage() {
                   type="text"
                   value={displayName}
                   onChange={(e) => setDisplayName(e.target.value)}
-                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 />
               </div>
               <div>
@@ -180,7 +180,7 @@ export function ProfilePage() {
                   type="text"
                   value={username}
                   onChange={(e) => setUsername(e.target.value)}
-                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 />
               </div>
               <div>
@@ -191,7 +191,7 @@ export function ProfilePage() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 />
               </div>
               <div>
@@ -206,7 +206,7 @@ export function ProfilePage() {
                     type="text"
                     value={ensName}
                     onChange={(e) => setEnsName(e.target.value)}
-                    className="flex-1 bg-[#1A1412] border border-[#3A2A20] border-l-0 rounded-r px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                    className="flex-1 bg-[#1A1412] border border-[#3A2A20] border-l-0 rounded-r px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                   />
                 </div>
               </div>
@@ -218,7 +218,7 @@ export function ProfilePage() {
                   type="text"
                   value={walletNickname}
                   onChange={(e) => setWalletNickname(e.target.value)}
-                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 />
               </div>
               <div>
@@ -249,7 +249,7 @@ export function ProfilePage() {
           {/* Alterar senha */}
           <h2 className="text-white font-bold mb-4">Alterar senha</h2>
           {passwordError && (
-            <div className="bg-red-900/30 border border-red-500/50 text-red-300 px-4 py-2 rounded mb-4 text-sm">
+            <div id="password-change-error" className="bg-red-900/30 border border-red-500/50 text-red-300 px-4 py-2 rounded mb-4 text-sm">
               {passwordError}
             </div>
           )}
@@ -260,7 +260,8 @@ export function ProfilePage() {
                 type={showPasswords ? 'text' : 'password'}
                 value={currentPassword}
                 onChange={(e) => setCurrentPassword(e.target.value)}
-                className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] pr-12"
+                aria-describedby={passwordError ? 'password-change-error' : undefined}
+                className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C] pr-12"
               />
               <button
                 type="button"
@@ -276,7 +277,8 @@ export function ProfilePage() {
                 type={showPasswords ? 'text' : 'password'}
                 value={newPassword}
                 onChange={(e) => setNewPassword(e.target.value)}
-                className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                aria-describedby={passwordError ? 'password-change-error' : undefined}
+                className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
               />
             </div>
             <div>
@@ -285,7 +287,8 @@ export function ProfilePage() {
                 type={showPasswords ? 'text' : 'password'}
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                aria-describedby={passwordError ? 'password-change-error' : undefined}
+                className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
               />
             </div>
             <button

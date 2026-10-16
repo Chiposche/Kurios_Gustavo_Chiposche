@@ -2,14 +2,19 @@
 
 Auditoria feita em 15/10/2026 com Lighthouse 13.5.0 (CLI), Chrome headless, build de produção com mocks (`VITE_ENABLE_MSW=true`). 3 medições por combinação, mediana reportada.
 
-## Resultados
+## Resultados (medianas)
 
-| Página | Perfil | Performance | A11y | Best Practices | SEO |
-| --- | --- | ---: | ---: | ---: | ---: |
-| Home `/` | Desktop | 97 | 100 | 96 | 100 |
-| Home `/` | Mobile | 77 | 100 | 96 | 100 |
-| Detalhe `/nft/nft-001` | Desktop | 85 | 100 | 96 | 100 |
-| Detalhe `/nft/nft-001` | Mobile | 73 | 100 | 96 | 100 |
+- **Home desktop:** Performance 97, A11y 100, Best Practices 96, SEO 100
+- **Home mobile:** Performance 77, A11y 100, Best Practices 96, SEO 100
+- **Detalhe desktop:** Performance 85, A11y 100, Best Practices 96, SEO 100
+- **Detalhe mobile:** Performance 73, A11y 100, Best Practices 96, SEO 100
+
+## Métricas Web Vitals (medianas)
+
+- **Home desktop:** LCP 0,93s / CLS 0,090 / TBT 10ms
+- **Home mobile:** LCP 3,43s / CLS 0,125 / TBT 279ms
+- **Detalhe desktop:** LCP 0,98s / CLS 0,261 / TBT 12ms
+- **Detalhe mobile:** LCP 3,76s / CLS 0,148 / TBT 300ms
 
 ## Por que performance ficou abaixo de 90 no mobile
 

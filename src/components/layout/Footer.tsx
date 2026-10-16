@@ -68,7 +68,7 @@ export function Footer() {
             <input
               type="email"
               placeholder="digite seu e-mail..."
-              className="flex-1 bg-[#2A1F1A] border border-[#3A2A20] rounded px-3 py-2 text-white text-sm placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+              className="flex-1 bg-[#2A1F1A] border border-[#3A2A20] rounded px-3 py-2 text-white text-sm placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
             />
             <button className="bg-[#D4944C] text-black px-4 py-2 rounded text-sm font-medium hover:bg-[#E0A55D] transition-colors">
               Enviar
@@ -162,7 +162,7 @@ export function Footer() {
               id="network-mode"
               value={networkMode}
               onChange={(e) => handleNetworkChange(e.target.value as NetworkMode)}
-              className="bg-[#2A1F1A] border border-[#3A2A20] rounded px-2 py-1 text-[#C4956A] focus:outline-none focus:border-[#D4944C]"
+              className="bg-[#2A1F1A] border border-[#3A2A20] rounded px-2 py-1 text-[#C4956A] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
             >
               <option value="normal">Normal</option>
               <option value="slow">Lenta (3s)</option>

@@ -175,7 +175,7 @@ export function CheckoutPage() {
       </div>
 
       {error && (
-        <div className="bg-red-900/30 border border-red-500/50 text-red-300 px-4 py-2 rounded mb-6 text-sm">
+        <div id="checkout-error" className="bg-red-900/30 border border-red-500/50 text-red-300 px-4 py-2 rounded mb-6 text-sm">
           {error}
         </div>
       )}
@@ -196,7 +196,8 @@ export function CheckoutPage() {
                   value={formData.collectorName}
                   onChange={(e) => updateField('collectorName', e.target.value)}
                   required
-                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                  aria-describedby={error ? 'checkout-error' : undefined}
+                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 />
               </div>
               <div>
@@ -208,7 +209,8 @@ export function CheckoutPage() {
                   value={formData.collectorUsername}
                   onChange={(e) => updateField('collectorUsername', e.target.value)}
                   required
-                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                  aria-describedby={error ? 'checkout-error' : undefined}
+                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 />
               </div>
               <div>
@@ -218,7 +220,7 @@ export function CheckoutPage() {
                 <select
                   value={formData.network}
                   onChange={(e) => updateField('network', e.target.value)}
-                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 >
                   <option value="">Selecione uma rede</option>
                   <option value="ethereum">Ethereum</option>
@@ -232,7 +234,7 @@ export function CheckoutPage() {
                   type="text"
                   value={formData.collectorUsername}
                   onChange={(e) => updateField('collectorUsername', e.target.value)}
-                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 />
               </div>
               <div>
@@ -242,7 +244,7 @@ export function CheckoutPage() {
                   placeholder="Endereço 0x da carteira"
                   value={formData.walletAddress}
                   onChange={(e) => updateField('walletAddress', e.target.value)}
-                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 />
               </div>
               <div>
@@ -255,7 +257,7 @@ export function CheckoutPage() {
                     type="text"
                     value={formData.ensName}
                     onChange={(e) => updateField('ensName', e.target.value)}
-                    className="flex-1 bg-[#1A1412] border border-[#3A2A20] border-l-0 rounded-r px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                    className="flex-1 bg-[#1A1412] border border-[#3A2A20] border-l-0 rounded-r px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                   />
                 </div>
               </div>
@@ -268,7 +270,8 @@ export function CheckoutPage() {
                   value={formData.collectorEmail}
                   onChange={(e) => updateField('collectorEmail', e.target.value)}
                   required
-                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                  aria-describedby={error ? 'checkout-error' : undefined}
+                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 />
               </div>
               <div>
@@ -277,7 +280,7 @@ export function CheckoutPage() {
                   type="text"
                   value={formData.referralCode}
                   onChange={(e) => updateField('referralCode', e.target.value)}
-                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C]"
+                  className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 />
               </div>
             </div>
@@ -288,7 +291,7 @@ export function CheckoutPage() {
                 value={formData.notes}
                 onChange={(e) => updateField('notes', e.target.value)}
                 rows={4}
-                className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] resize-none"
+                className="w-full bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-3 text-white focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C] resize-none"
               />
             </div>
           </div>

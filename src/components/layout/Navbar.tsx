@@ -114,7 +114,7 @@ export function Navbar() {
               placeholder="Buscar NFTs..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="flex-1 bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-2 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+              className="flex-1 bg-[#1A1412] border border-[#3A2A20] rounded px-4 py-2 text-white placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
               autoFocus
             />
             <button

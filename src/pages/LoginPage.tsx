@@ -59,7 +59,7 @@ export function LoginPage() {
 
           {/* Mensagem de erro */}
           {error && (
-            <div className="bg-red-900/30 border border-red-500/50 text-red-300 px-4 py-2 rounded mb-4 text-sm">
+            <div id="login-error" className="bg-red-900/30 border border-red-500/50 text-red-300 px-4 py-2 rounded mb-4 text-sm">
               {error}
             </div>
           )}
@@ -73,6 +73,7 @@ export function LoginPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 aria-label="E-mail"
+                aria-describedby={error ? 'login-error' : undefined}
               />
             </div>
 
@@ -85,6 +86,7 @@ export function LoginPage() {
                 required
                 className="pr-12"
                 aria-label="Senha"
+                aria-describedby={error ? 'login-error' : undefined}
               />
               <button
                 type="button"

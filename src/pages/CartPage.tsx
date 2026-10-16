@@ -280,7 +280,7 @@ export function CartPage() {
                   placeholder="Digite o código..."
                   value={couponCode}
                   onChange={(e) => setCouponCode(e.target.value)}
-                  className="flex-1 bg-[#1A1412] border border-[#3A2A20] rounded px-3 py-2 text-white text-sm placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+                  className="flex-1 bg-[#1A1412] border border-[#3A2A20] rounded px-3 py-2 text-white text-sm placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
                 />
                 <button
                   onClick={handleApplyCoupon}
@@ -291,7 +291,19 @@ export function CartPage() {
               </div>
               {couponError && <p className="text-red-400 text-xs mt-1">{couponError}</p>}
               {appliedCoupon && !couponError && (
-                <p className="text-green-400 text-xs mt-1">Cupom aplicado!</p>
+                <div className="flex items-center gap-2 mt-1">
+                  <p className="text-green-400 text-xs">Cupom aplicado!</p>
+                  <button
+                    onClick={() => {
+                      setAppliedCoupon(null)
+                      setCouponCode('')
+                    }}
+                    className="text-[#A78B6E] hover:text-red-400 text-xs"
+                    aria-label="Remover cupom"
+                  >
+                    remover
+                  </button>
+                </div>
               )}
             </div>
 

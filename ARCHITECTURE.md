@@ -4,16 +4,14 @@ Anotações sobre como o projeto está organizado, pra facilitar a navegação n
 
 ## Stack
 
-| Camada | Tecnologia |
-| --- | --- |
-| Interface | React 19 + TypeScript |
-| Roteamento | TanStack Router |
-| Estado remoto | TanStack Query |
-| HTTP | Axios |
-| Tempo real | Socket.IO (client) |
-| Estilos | Tailwind CSS 4 + shadcn/ui |
-| Mocks | MSW + `@mswjs/socket.io-binding` |
-| Testes | Playwright (E2E) + Lighthouse |
+- React 19 + TypeScript
+- TanStack Router (rotas)
+- TanStack Query (cache, loading, erro)
+- Axios (cliente HTTP, baseURL `/api`)
+- Socket.IO client (tempo real)
+- Tailwind CSS 4 + shadcn/ui (Button, Input, Badge, Card, Select, Dialog, Skeleton)
+- MSW + @mswjs/socket.io-binding (mocks)
+- Playwright (testes E2E) + Lighthouse (auditoria)
 
 ## Pastas
 
@@ -33,22 +31,41 @@ lighthouse/      → config e relatórios
 
 ## Rotas
 
-Definidas em `src/lib/router.tsx`:
+Definidas em `src/lib/router.tsx`. Rotas privadas checam `useAuth()` e redirecionam pro login. Filtros e busca ficam na URL como search params.
 
-| Rota | Acesso |
-| --- | --- |
-| `/` | público |
-| `/marketplace` | público |
-| `/nft/$nftId` | público |
-| `/cart` | autenticado |
-| `/checkout` | autenticado |
-| `/orders/$orderId` | autenticado |
-| `/login`, `/register` | público |
-| `/profile`, `/wallets`, `/favorites` | autenticado |
-| `/criadores`, `/aprenda` | público |
-| `*` | 404 |
+- `/` — home (público)
+- `/marketplace` — catálogo com busca, filtros, paginação (público)
+- `/nft/$nftId` — detalhe do NFT (público)
+- `/cart` — carrinho (autenticado)
+- `/checkout` — pagamento (autenticado)
+- `/orders/$orderId` — confirmação do pedido (autenticado)
+- `/login`, `/register` — sessão (público)
+- `/profile`, `/wallets`, `/favorites` — conta (autenticado)
+- `/criadores`, `/aprenda` — páginas extras (público)
+- `*` — 404
 
-Rotas privadas checam `useAuth()` e redirecionam pro login se necessário. Filtros e busca ficam na URL como search params.
+## Endpoints REST
+
+Tudo sob `/api`:
+
+- **Sessão:** POST /auth/login, /auth/register, /auth/logout, GET /auth/session
+- **NFTs:** GET /nfts (com filtros, busca, ordenação, paginação), GET /nfts/:id
+- **Favoritos:** GET /favorites, POST /favorites/:nftId, DELETE /favorites/:nftId
+- **Carrinho:** GET /cart, POST /cart/items, PUT /cart/items/:id, DELETE /cart/items/:id
+- **Cotação:** POST /cart/quote (aceita couponCode)
+- **Pedidos:** POST /orders (com idempotencyKey), GET /orders/:id
+- **Perfil:** GET /profile, PUT /profile, PUT /profile/password
+- **Carteiras:** GET /wallets, POST /wallets, PUT /wallets/:id
+
+Erros voltam com status HTTP certo (401, 404, 409, 422) e um campo `message`.
+
+## Sessão
+
+O token vem do login e fica no sessionStorage (sobrevive refresh mas não vaza entre abas). O Axios injeta o token no header de toda requisição. Se o servidor responde 401, o token é removido. No logout, limpa todo o cache do TanStack Query pra não vazar dados entre usuários.
+
+## Carrinho
+
+Cada usuário tem seu carrinho separado no mock. Precisa estar logado pra usar. Cupom valida pela API, o front nunca calcula desconto. Valores em ETH são strings decimais e os cálculos usam decimal.js-light pra não perder precisão.
 
 ## Como os mocks funcionam
 
@@ -63,8 +80,30 @@ Em dev o MSW liga automático. No build de produção precisa de `VITE_ENABLE_MS
 - `staleTime: 30s` — evita refetch a cada navegação
 - `gcTime: 5min` — mantém dados ao voltar pra página anterior
 - Mutations invalidam as queries relacionadas
-- Favoritos usam atualização otimista com rollback
-- Socket events invalidam os caches afetados
+- Favoritos usam atualização otimista com rollback se der erro
+- Socket events invalidam os caches afetados (catálogo, detalhe, carrinho, cotação)
+
+## Socket.IO
+
+O hook useSocket conecta no Layout e escuta dois eventos:
+
+- **nft.updated** — quando o preço de um NFT muda, invalida o cache do catálogo, detalhe, carrinho e cotação
+- **order.updated** — quando o status do pedido muda (pendente → confirmado/recusado), invalida o cache do pedido
+
+Os eventos têm um campo `version` pra ignorar duplicatas e eventos antigos. No mock, o MSW intercepta o WebSocket e o @mswjs/socket.io-binding traduz pro protocolo do Socket.IO.
+
+Limitações do transporte no mock:
+- Reconexão automática desabilitada (não tem servidor real pra reconectar)
+- Cada aba do navegador é um "servidor" isolado
+- Não tem namespace nem rooms, só broadcast
+
+## Decisões de UX
+
+- Visual segue o Figma (paleta dourada/terracota, fontes mono nos títulos)
+- Skeletons com shimmer nos loadings, respeitando prefers-reduced-motion
+- "Minha coleção" do footer virou a página de favoritos (/favorites)
+- Botão de reset e seletor de rede no footer só aparecem com mocks ativos
+- Home mostra os 8 NFTs mais recentes como destaques, busca e filtros levam pro /marketplace
 
 ## Limitações conhecidas
 

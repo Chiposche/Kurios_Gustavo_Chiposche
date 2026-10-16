@@ -4,85 +4,64 @@ Marketplace de NFTs feito em React + TypeScript pro desafio frontend da Jungle G
 
 **Desenvolvido por:** Gustavo Chiposche Pedro
 
-## Stack
-
-| Área | Tecnologia |
-| --- | --- |
-| Interface | React 19 + TypeScript |
-| Roteamento | TanStack Router |
-| Estado remoto | TanStack Query |
-| HTTP | Axios |
-| Estilização | Tailwind CSS + shadcn/ui |
-| Mocks | MSW + Socket.IO |
-| Testes | Playwright (E2E) + Lighthouse |
-
-Mais detalhes em [ARCHITECTURE.md](ARCHITECTURE.md) e [lighthouse/RESULTS.md](lighthouse/RESULTS.md).
-
 ## Como rodar
 
 ```bash
 npm install
-npx playwright install    # só na primeira vez
+npx playwright install    # só na primeira vez, pra rodar os testes E2E
 npm run dev               # http://localhost:5173
 ```
 
 O MSW liga sozinho em dev — não precisa de nada além disso.
 
+## Variáveis de ambiente
+
+- `VITE_ENABLE_MSW=true` — liga os mocks no build de produção. Em dev é automático.
+
+Coloca no `.env.local` ou direto na Vercel.
+
 ## Credenciais de teste
 
-| E-mail | Senha |
-| --- | --- |
-| `contato@email.com` | `Senha123!` |
-| `kai@email.com` | `Senha456!` |
+- `contato@email.com` / `Senha123!`
+- `kai@email.com` / `Senha456!`
 
 Cupons: `KURIO10` (10%), `LAUNCH20` (20%), `EXPIRED01` (expirado).
 
 Carteira **"Carteira de teste (recusa o pagamento)"** simula pagamento recusado.
 
-## Comandos
-
-| Comando | O que faz |
-| --- | --- |
-| `npm run dev` | Dev com mocks (porta 5173) |
-| `npm run build` | Type check + build em `dist/` |
-| `npm run preview` | Serve o build (porta 4173) |
-| `npm run test:e2e` | Testes E2E (desktop + mobile) |
-| `npm run lighthouse` | Auditoria Lighthouse |
-
-## Cenários de teste
+## Cenários de rede
 
 No rodapé do site tem um seletor de rede pra simular condições diferentes:
 
+- **Normal** — tudo funciona normal
 - **Lenta** — mostra skeletons de loading
 - **Erro 500** — mostra mensagem de erro com botão de recarregar
 - **Sem conexão** — falha de rede
 - **Timeout** — sem resposta por 15s
 
-O botão "Resetar cenário" volta tudo ao normal.
+O botão "Resetar cenário" volta tudo ao normal (dados e rede).
 
-Outros cenários: pagamento recusado (carteira de teste), cupom inválido/expirado, busca sem resultado, e-mail duplicado no cadastro, preço alterado em tempo real.
+## Comandos
 
-## Testes E2E
+- `npm run dev` — dev com mocks (porta 5173)
+- `npm run build` — type check + build em `dist/`
+- `npm run preview` — serve o build (porta 4173)
+- `npm run typecheck` — só verificação de tipos
+- `npm run lint` — lint (oxlint)
+- `npm run test:e2e` — testes E2E (desktop + mobile)
+- `npm run test:e2e:ui` — testes E2E em modo interativo
+- `npm run lighthouse` — auditoria Lighthouse
 
-```bash
-npm run test:e2e
-```
+## Como reproduzir os fluxos de falha
 
-112 testes em Chromium desktop (1440) e mobile (390). Cobre auth, carrinho, checkout, favoritos, 404, cenários de rede, tempo real, acessibilidade e regressão visual.
-
-## Deploy (Vercel)
-
-1. Framework: **Vite**
-2. Variável de ambiente: `VITE_ENABLE_MSW=true` (Preview + Production)
-3. Desligar Deployment Protection pra o link funcionar sem login da Vercel
-4. O `vercel.json` já tem o rewrite SPA
-
-## Estrutura
-
-```
-src/        # páginas, componentes, hooks, rotas
-mocks/      # handlers MSW, banco em memória, fixtures
-e2e/        # testes Playwright
-lighthouse/ # config e relatórios
-docs/       # enunciado do desafio
-```
+- **Loading lento:** rodapé → rede "Lenta" → abrir catálogo
+- **Erro 500:** rodapé → rede "Erro 500" → catálogo. Volta pra "Normal" e clica "Recarregar"
+- **Sem conexão:** rodapé → rede "Sem conexão" → catálogo
+- **Pagamento recusado:** checkout → escolher carteira "Carteira de teste"
+- **Cupom inválido:** carrinho → digitar "EXPIRED01" ou qualquer texto
+- **Busca vazia:** catálogo → buscar "zzz"
+- **404:** abrir /nft/nft-9999 ou /abc
+- **E-mail duplicado:** cadastro com contato@email.com
+- **Preço alterado em tempo real:** ter um NFT no carrinho e esperar ~30s, o socket muda o preço sozinho. No carrinho aparece um aviso e no checkout bloqueia a cotação desatualizada
+- **Troca de usuário:** logar como nova.sato, ver carrinho, logout e entrar como kai.tanaka — nada do anterior aparece
+- **Reset:** rodapé → "Resetar cenário de teste"

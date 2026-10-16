@@ -76,9 +76,10 @@ export function RegisterPage() {
                 onChange={(e) => setUsername(e.target.value)}
                 required
                 aria-label="Nome de usuário"
+                aria-describedby={fieldErrors.username ? 'username-error' : undefined}
               />
               {fieldErrors.username && (
-                <p className="text-red-400 text-xs mt-1">{fieldErrors.username[0]}</p>
+                <p id="username-error" className="text-red-400 text-xs mt-1">{fieldErrors.username[0]}</p>
               )}
             </div>
 
@@ -90,9 +91,10 @@ export function RegisterPage() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 aria-label="E-mail"
+                aria-describedby={fieldErrors.email ? 'email-error' : undefined}
               />
               {fieldErrors.email && (
-                <p className="text-red-400 text-xs mt-1">{fieldErrors.email[0]}</p>
+                <p id="email-error" className="text-red-400 text-xs mt-1">{fieldErrors.email[0]}</p>
               )}
             </div>
 
@@ -105,6 +107,7 @@ export function RegisterPage() {
                 required
                 className="pr-12"
                 aria-label="Senha"
+                aria-describedby={fieldErrors.password ? 'password-error' : undefined}
               />
               <button
                 type="button"
@@ -115,7 +118,7 @@ export function RegisterPage() {
                 {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
               </button>
               {fieldErrors.password && (
-                <p className="text-red-400 text-xs mt-1">{fieldErrors.password[0]}</p>
+                <p id="password-error" className="text-red-400 text-xs mt-1">{fieldErrors.password[0]}</p>
               )}
             </div>
 
@@ -127,9 +130,10 @@ export function RegisterPage() {
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 required
                 aria-label="Confirmar senha"
+                aria-describedby={fieldErrors.confirmPassword ? 'confirm-password-error' : undefined}
               />
               {fieldErrors.confirmPassword && (
-                <p className="text-red-400 text-xs mt-1">{fieldErrors.confirmPassword[0]}</p>
+                <p id="confirm-password-error" className="text-red-400 text-xs mt-1">{fieldErrors.confirmPassword[0]}</p>
               )}
             </div>
 

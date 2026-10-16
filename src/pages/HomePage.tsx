@@ -56,7 +56,7 @@ function CatalogSection() {
                       : {},
                 })
               }
-              className="bg-[#2A1F1A] border border-[#3A2A20] rounded px-3 py-1.5 text-[#C4956A] text-sm focus:outline-none focus:border-[#D4944C]"
+              className="bg-[#2A1F1A] border border-[#3A2A20] rounded px-3 py-1.5 text-[#C4956A] text-sm focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
             >
               {HOME_SORT_OPTIONS.map((option) => (
                 <option key={option.value} value={option.value}>
@@ -75,7 +75,7 @@ function CatalogSection() {
             aria-label="Buscar NFTs"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            className="flex-1 bg-[#2A1F1A] border border-[#3A2A20] rounded-full px-4 py-2.5 text-white text-sm placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C]"
+            className="flex-1 bg-[#2A1F1A] border border-[#3A2A20] rounded-full px-4 py-2.5 text-white text-sm placeholder-[#A78B6E] focus:outline-none focus:border-[#D4944C] focus-visible:ring-2 focus-visible:ring-[#D4944C]"
           />
           <button
             type="submit"
